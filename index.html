@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>STOP WATCH</h1>
+        <div class="watch-container">
+            <span class="digit" id="hrs">00</span>
+            <span class="digit">:</span>
+            <span class="digit" id="min">00</span>
+            <span class="digit">:</span>
+            <span class="digit" id="sec">00</span>
+            <!-- <span class="digit">:</span> -->
+            <span class="digit" id="msec">00</span>
+        </div>
+        <div class="lap-box">
+            <p>--LAPS--</p>
+        </div>
+        <div class="btn-container">
+            <button class="btn" id="start-btn" onclick="audio.play()">START</button>
+            <button class="btn" id="lap-btn">LAP</button>
+            <button class="btn" id="stop-btn" onclick= "audio.pause()">STOP</button>
+            <button class="btn" id="reset-btn" onclick= "audio.pause()">RESET</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>

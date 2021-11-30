@@ -1,0 +1,90 @@
+$primary-color: #7A64FF;
+$secondary-color: #222326;
+$hover-color: #000000;
+$background-color: rgb(243, 242, 242);
+$font-color: white;
+$main-font: 'Franklin Gothic Medium';
+$other-font: 'Arial Narrow', Arial, sans-serif;
+
+body {
+    background-color: $background-color;
+}
+h1 {
+    color: $secondary-color;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: $main-font, $other-font;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.watch-container {
+    margin-bottom: auto;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 50px 50px;
+    background-color: $secondary-color;
+    box-shadow: $primary-color 1px 1px 10px;
+}
+.digit {
+    font-size: 80px;
+    padding-inline: 10px;
+    color: white;
+}
+#msec {
+    font-size: 50px;
+    color: $primary-color;
+}
+.btn-container {
+    // padding-bottom: 50px;
+    position: fixed;
+    bottom: 50px;
+}
+.btn {
+    &:focus{
+        color:$primary-color;
+        border: 2px solid $primary-color;
+        background-color: $hover-color;
+    }
+    &:hover{
+        color: $primary-color;
+        border: 2px solid $primary-color;
+        transition: 0.5s;
+        background-color: $hover-color;
+        cursor: pointer;
+    }
+    font-family: $main-font, $other-font; 
+    background-color: $secondary-color;
+    color: $font-color;
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    border-color: #222326;
+    margin-left: 20px;
+    
+}
+#reset-btn {
+    &:hover{
+        color: white;
+        box-shadow: $primary-color 1px 1px 10px;
+    }
+    background-color: #7A64FF;
+    color: white;
+    border-style: double;
+    border-color: #7A64FF;
+    border-radius: 25px; 
+}
+.lap-box {
+    border: 2px solid $secondary-color;
+    margin-top: 1em;
+    text-align: center;
+    margin-bottom: 7em;
+    & p {
+        font-size: 15pt;
+    }
+    overflow-y: scroll;
+    width: 300px;   
+}
+
